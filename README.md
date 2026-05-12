@@ -1,11 +1,27 @@
-<div align="center">
+# Paulo Victor Refrigeração
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Landing page profissional desenvolvida para Paulo Victor Refrigeração, especialista em manutenção e instalação de sistemas de refrigeração comercial e industrial em Fortaleza e Região Metropolitana.
 
-  <h1>Built with AI Studio</h2>
+## 🚀 Tecnologias
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **React 19**
+- **Vite**
+- **Tailwind CSS 4**
+- **Motion** (Framer Motion)
+- **Lucide React** & **Phosphor Icons**
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🛠️ Funcionalidades
 
-</div>
+- **Design Mobile-First**: Otimizado para dispositivos móveis e desktops.
+- **Scroll Suave**: Navegação fluida entre seções.
+- **Animações de Revelação**: Feedback visual atraente durante a rolagem.
+- **Integração com WhatsApp**: Botões de ação direta para orçamentos rápidos.
+- **Galeria de Trabalhos**: Carrossel interativo exibindo serviços realizados.
+
+## ✒️ Créditos
+
+Este projeto foi desenvolvido por **VH Design** em Fortaleza, CE.
+
+---
+
+Desenvolvido com foco em performance e conversão para o setor de refrigeração profissional.
