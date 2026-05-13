@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Snowflake, WhatsappLogo, ArrowDown, Star, MapPin, Clock, SealCheck } from '@phosphor-icons/react';
+import { Snowflake, WhatsappLogo, ArrowDown, Star, MapPin, Clock, ShieldCheck } from '@phosphor-icons/react';
 import { DYNAMIC_WORDS, WA_LINK } from '../constants';
 import { WorkCarousel } from './WorkCarousel';
 
@@ -63,21 +63,20 @@ export const Hero = () => {
             </h1>
             
             <p className="text-p1 text-white/90 max-w-lg leading-relaxed reveal delay-150">
-              Manutenção corretiva e preventiva com atendimento 24h em toda Fortaleza e Região Metropolitana. 
-              Sua produção nunca para com soluções técnicas precisas.
+              Mais de 8 anos salvando operações comerciais pela madrugada. Manutenção ágil e preventiva nas suas câmaras, balcões e pistas frias, cobrindo toda Região Metropolitana de Fortaleza.
             </p>
           </div>
 
           <div className="space-y-8 reveal delay-200">
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="bg-brand-whatsapp text-white px-8 py-4.5 rounded-[1.25rem] font-bold text-[17px] flex items-center justify-center gap-3 shadow-lg shadow-brand-whatsapp/20 hover:bg-brand-whatsapp-hover hover:-translate-y-1 active:scale-[0.98] transition-all">
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="bg-brand-whatsapp text-white px-8 py-4.5 rounded-[1.25rem] font-bold text-p2 flex items-center justify-center gap-3 shadow-lg shadow-brand-whatsapp/20 hover:bg-brand-whatsapp-hover hover:-translate-y-1 active:scale-[0.98] transition-all">
                 <WhatsappLogo weight="fill" className="text-[28px] animate-wiggle" />
                 <span>Orçamento Grátis</span>
               </a>
               <a 
                 href="#servicos" 
                 onClick={(e) => scrollToSection(e, '#servicos')}
-                className="text-white/50 hover:text-white/80 px-4 py-4 font-bold uppercase tracking-[0.15em] text-[13px] transition-all flex justify-center items-center group cursor-pointer"
+                className="text-white/50 hover:text-white/80 px-4 py-4 font-bold uppercase tracking-[0.15em] text-p4 transition-all flex justify-center items-center group cursor-pointer"
               >
                 Nossos Serviços <ArrowDown weight="bold" className="ml-2 group-hover:translate-y-1 transition-transform opacity-30 group-hover:opacity-100" />
               </a>
@@ -98,7 +97,7 @@ export const Hero = () => {
                   <Star weight="fill" size={16} />
                   <Star weight="fill" size={16} />
                 </div>
-                <span className="text-white/80 font-bold text-[13px] uppercase tracking-widest leading-none">Clientes satisfeitos</span>
+                <span className="text-white/80 font-bold text-p4 leading-none">Clientes satisfeitos</span>
               </div>
             </div>
           </div>
@@ -110,7 +109,7 @@ export const Hero = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1.5">Abrangência</span>
-                <span className="text-sm sm:text-base font-bold text-white leading-none whitespace-nowrap">Fortaleza e Região</span>
+                <span className="text-p3 sm:text-p2 font-bold text-white leading-none whitespace-nowrap">Fortaleza e Região</span>
               </div>
             </div>
 
@@ -120,17 +119,17 @@ export const Hero = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1.5">Disponibilidade</span>
-                <span className="text-sm sm:text-base font-bold text-white leading-none whitespace-nowrap">Plantão 24 Horas</span>
+                <span className="text-p3 sm:text-p2 font-bold text-white leading-none whitespace-nowrap">Plantão 24 Horas</span>
               </div>
             </div>
 
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10 sm:hidden lg:flex">
               <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110">
-                <SealCheck weight="fill" className="text-2xl" />
+                <ShieldCheck weight="fill" className="text-2xl" />
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1.5">Orçamento</span>
-                <span className="text-sm sm:text-base font-bold text-white leading-none whitespace-nowrap">Sem Custos</span>
+                <span className="text-p3 sm:text-p2 font-bold text-white leading-none whitespace-nowrap">Sem Custos</span>
               </div>
             </div>
           </div>

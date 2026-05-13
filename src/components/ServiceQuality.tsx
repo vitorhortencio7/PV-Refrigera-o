@@ -3,7 +3,7 @@ import { Check, MapPin } from '@phosphor-icons/react';
 
 export const ServiceQuality = () => {
   return (
-    <section className="w-full bg-brand-bg-alt relative z-10 py-16 md:py-32 border-t border-brand-border overflow-hidden">
+    <section className="w-full bg-brand-bg-alt relative z-10 py-12 md:py-24 border-t border-brand-border overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center gap-12 lg:gap-20">
         <div className="flex-1 space-y-6 sm:space-y-8 relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-primary-subtle text-brand-primary-text font-bold text-p4 reveal">

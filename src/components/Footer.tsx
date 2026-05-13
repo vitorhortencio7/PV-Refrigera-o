@@ -10,11 +10,16 @@ export const Footer = () => (
           <div className="w-10 h-10 bg-brand-primary rounded-full border border-white/10 flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
             <img src="https://i.ibb.co/kswhJNTT/New-Project.jpg" alt="Paulo Victor Logo" className="w-full h-full object-cover" />
           </div>
-          <span className="text-h3 leading-none text-white">Paulo Victor <br/><span className="text-p4 text-brand-accent">Refrigeração</span></span>
+          <span className="text-h3 leading-none text-white whitespace-nowrap">Paulo Victor <br/><span className="text-p4 text-brand-accent">Refrigeração</span></span>
         </div>
-        <p className="text-p3 text-brand-text-aux max-w-sm">Especialistas em instalação e manutenção de câmaras frias, ilhas, e expositores comerciais em Fortaleza.</p>
-        <div className="flex items-center gap-2.5 pt-2 text-[#F5F7FA] font-bold text-p4">
-          <span className="w-2 h-2 bg-brand-whatsapp rounded-full animate-pulse"></span> Fortaleza e Região Metropolitana
+        <p className="text-p3 text-brand-text-aux max-w-sm">
+          Especialistas em instalação e manutenção de câmaras frias, pistas, balcões, parte elétrica completa, testes de compressores, além de lidar com a limpeza preventiva, troca de gaxetas (borrachas) para garantir uma qualidade 100% dos seus frios. Soluções completas com faturamento (NF e boleto). 
+        </p>
+        <div className="flex flex-col gap-2 pt-2 text-[#F5F7FA] font-bold text-p4">
+          <div className="flex items-center gap-2.5">
+            <span className="w-2 h-2 bg-brand-whatsapp rounded-full animate-pulse"></span> Fortaleza e Região (Especializados em demandas comerciais)
+          </div>
+          <span className="text-white/50 text-[10px] uppercase font-bold tracking-widest mt-2 block">Cnpj: 44.716.874/0001-15</span>
         </div>
       </div>
       <div>
@@ -34,15 +39,16 @@ export const Footer = () => (
       <div>
         <h4 className="text-h3 mb-6 text-white">Serviços</h4>
         <ul className="space-y-3 text-brand-text-aux/80 text-p3">
-          <li className="hover:text-white transition-colors cursor-default">Câmaras Frias</li>
-          <li className="hover:text-white transition-colors cursor-default">Bancadas de Frios</li>
-          <li className="hover:text-white transition-colors cursor-default">Pistas Frias</li>
-          <li className="hover:text-white transition-colors cursor-default">Geladeiras Inox</li>
+          <li className="hover:text-white transition-colors cursor-default">Câmaras Frias & Motores</li>
+          <li className="hover:text-white transition-colors cursor-default">Pistas Frias & Balcões</li>
+          <li className="hover:text-white transition-colors cursor-default">Tubulação & Gás</li>
+          <li className="hover:text-white transition-colors cursor-default">Reparos Elétricos</li>
+          <li className="hover:text-white transition-colors cursor-default">Manutenções Preventivas e Limpeza</li>
         </ul>
       </div>
     </div>
     <div className="max-w-[1440px] mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-      <span className="text-center md:text-left text-brand-text-aux text-p4 opacity-80">&copy; {new Date().getFullYear()} Paulo Victor Refrigeração. Todos os direitos reservados.</span>
+      <span className="text-center md:text-left text-brand-text-aux text-p4 opacity-80">&copy; {new Date().getFullYear()} Paulo Victor Refrigeração Profissional. Todos os direitos reservados.</span>
       <span className="text-p4 text-brand-text-aux/40 text-center md:text-right">
         Desenvolvido por VH Design • Fortaleza - CE
       </span>
