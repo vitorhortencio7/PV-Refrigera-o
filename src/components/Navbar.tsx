@@ -51,7 +51,7 @@ export const Navbar = () => {
         <div className="max-w-[1440px] mx-auto px-5 sm:px-10 flex items-center justify-between h-full">
           <div className="flex items-center gap-3 relative z-[70]">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-primary rounded-full border border-brand-border/20 flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
-              <img src="https://i.ibb.co/kswhJNTT/New-Project.jpg" alt="Paulo Victor Logo" className="w-full h-full object-cover" />
+              <img src="https://i.ibb.co/kswhJNTT/New-Project.jpg" alt="Paulo Victor Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
             <div className="flex flex-col">
               <span className={`text-[1.25rem] font-bold tracking-tight uppercase heading-font leading-none mb-0.5 transition-colors ${ (scrolled || menuOpen) ? 'text-brand-text' : 'text-white'}`}>Paulo Victor</span>

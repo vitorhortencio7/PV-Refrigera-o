@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { HERO_IMAGES } from '../constants';
 
 export const WorkCarousel = () => {
@@ -13,14 +14,19 @@ export const WorkCarousel = () => {
 
   return (
     <div className="w-full h-[400px] sm:h-full sm:min-h-[450px] relative rounded-[2rem] overflow-hidden border border-brand-border shadow-2xl group bg-brand-bg">
-      {HERO_IMAGES.map((src, i) => (
-        <img 
-          key={i}
-          src={src}
-          alt={`Trabalho em campo ${i + 1}`}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
+      <AnimatePresence mode="wait">
+        <motion.img 
+          key={current}
+          src={HERO_IMAGES[current]}
+          alt={`Trabalho em campo ${current + 1}`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          className="absolute inset-0 w-full h-full object-cover"
+          referrerPolicy="no-referrer"
         />
-      ))}
+      </AnimatePresence>
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 md:p-8">
         <div className="flex items-center gap-2 mb-3">
            <span className="w-2 h-2 bg-brand-primary rounded-full animate-pulse"></span>

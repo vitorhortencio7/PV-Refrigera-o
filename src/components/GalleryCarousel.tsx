@@ -71,6 +71,8 @@ export const GalleryCarousel = () => {
                         src={activeProject.beforeImg} 
                         alt="Antes" 
                         className="w-full h-full object-cover grayscale-[0.3]" 
+                        referrerPolicy="no-referrer"
+                        loading="lazy"
                       />
                       <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md px-4 py-1.5 rounded-full text-white font-bold text-[10px] uppercase tracking-[0.2em]">
                         Antes
@@ -88,6 +90,8 @@ export const GalleryCarousel = () => {
                         src={activeProject.afterImg} 
                         alt="Depois" 
                         className="w-full h-full object-cover" 
+                        referrerPolicy="no-referrer"
+                        loading="lazy"
                       />
                       <div className="absolute bottom-4 right-4 bg-brand-primary px-4 py-1.5 rounded-full text-white font-bold text-[10px] uppercase tracking-[0.2em] shadow-lg">
                         Depois

@@ -8,7 +8,7 @@ export const Footer = () => (
       <div className="sm:col-span-2 space-y-6">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-brand-primary rounded-full border border-white/10 flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
-            <img src="https://i.ibb.co/kswhJNTT/New-Project.jpg" alt="Paulo Victor Logo" className="w-full h-full object-cover" />
+            <img src="https://i.ibb.co/kswhJNTT/New-Project.jpg" alt="Paulo Victor Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </div>
           <span className="text-h3 leading-none text-white whitespace-nowrap">Paulo Victor <br/><span className="text-p4 text-brand-accent">Refrigeração</span></span>
         </div>

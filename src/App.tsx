@@ -9,6 +9,7 @@ import { ServiceQuality } from './components/ServiceQuality';
 import { Testimonials, ClientLogos } from './components/SocialProof';
 import { CTASection } from './components/CTASection';
 import { Footer, FloatingMobileCTA } from './components/Footer';
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   // Initialize scroll reveal animations
@@ -46,6 +47,7 @@ export default function App() {
       {/* Persistence and Mobility */}
       <Footer />
       <FloatingMobileCTA />
+      <Analytics />
     </div>
   );
 }

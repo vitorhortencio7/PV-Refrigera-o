@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { Snowflake, WhatsappLogo, ArrowDown, Star, MapPin, Clock, ShieldCheck } from '@phosphor-icons/react';
 import { DYNAMIC_WORDS, WA_LINK, CLIENT_LOGOS } from '../constants';
 import { WorkCarousel } from './WorkCarousel';
@@ -55,10 +56,19 @@ export const Hero = () => {
             
             <h1 className="text-h1 text-white reveal delay-75">
               <span className="block mb-2">Especialistas em</span>
-              <span className="block h-[2.5em] md:h-[1.3em]">
-                <span key={wordIndex} className="text-brand-primary-hover block animate-slide-up-fade text-balance max-w-sm sm:max-w-md md:max-w-none">
-                  {DYNAMIC_WORDS[wordIndex]}
-                </span>
+              <span className="block h-[2.5rem] md:h-[1.3em] overflow-hidden relative">
+                <AnimatePresence mode="wait">
+                  <motion.span 
+                    key={wordIndex} 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+                    className="text-brand-primary-hover block text-balance max-w-sm sm:max-w-md md:max-w-none"
+                  >
+                    {DYNAMIC_WORDS[wordIndex]}
+                  </motion.span>
+                </AnimatePresence>
               </span>
             </h1>
             
@@ -86,7 +96,7 @@ export const Hero = () => {
               <div className="flex -space-x-3 shrink-0">
                 {CLIENT_LOGOS.slice(0, 3).map((logo, index) => (
                   <div key={index} className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary bg-white flex items-center justify-center p-1 inline-block shadow-lg z-0 relative">
-                    <img src={logo} alt="Cliente Logo" className="w-full h-full object-contain rounded-full" />
+                    <img src={logo} alt="Cliente Logo" className="w-full h-full object-contain rounded-full" referrerPolicy="no-referrer" />
                   </div>
                 ))}
                 <div className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary bg-brand-primary/20 backdrop-blur-sm flex items-center justify-center text-white text-xs font-bold z-10 shadow-lg relative">+5k</div>
