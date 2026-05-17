@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.pvrefrigeracao.com.br/sitemap.xml
+Sitemap: https://pvrefrigeracao.com.br/sitemap.xml

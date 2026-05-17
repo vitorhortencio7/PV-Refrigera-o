@@ -8,7 +8,7 @@ export const Footer = () => (
       <div className="sm:col-span-2 space-y-6">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-brand-primary rounded-full border border-white/10 flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
-            <img src="https://i.ibb.co/kswhJNTT/New-Project.jpg" alt="Paulo Victor Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <img src="https://i.ibb.co/kswhJNTT/New-Project.jpg" alt="Logo Paulo Victor Refrigeração Profissional em Fortaleza" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </div>
           <span className="text-h3 leading-none text-white whitespace-nowrap">Paulo Victor <br/><span className="text-p4 text-brand-accent">Refrigeração</span></span>
         </div>
@@ -20,6 +20,7 @@ export const Footer = () => (
             <span className="w-2 h-2 bg-brand-whatsapp rounded-full animate-pulse"></span> Fortaleza e Região (Especializados em demandas comerciais)
           </div>
           <span className="text-white/50 text-[10px] uppercase font-bold tracking-widest mt-2 block">Cnpj: 44.716.874/0001-15</span>
+          <span className="text-white/30 text-[9px] uppercase font-bold tracking-widest mt-1 block max-w-xs">Atendemos: Fortaleza, Caucaia, Maracanaú, Eusébio, Aquiraz, Maranguape, Pacatuba e Itaitinga.</span>
         </div>
       </div>
       <div>

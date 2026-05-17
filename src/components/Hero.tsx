@@ -96,7 +96,7 @@ export const Hero = () => {
               <div className="flex -space-x-3 shrink-0">
                 {CLIENT_LOGOS.slice(0, 3).map((logo, index) => (
                   <div key={index} className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary bg-white flex items-center justify-center p-1 inline-block shadow-lg z-0 relative">
-                    <img src={logo} alt="Cliente Logo" className="w-full h-full object-contain rounded-full" referrerPolicy="no-referrer" />
+                    <img src={logo} alt="Referência de serviço de refrigeração em Fortaleza" className="w-full h-full object-contain rounded-full" referrerPolicy="no-referrer" />
                   </div>
                 ))}
                 <div className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary bg-brand-primary/20 backdrop-blur-sm flex items-center justify-center text-white text-xs font-bold z-10 shadow-lg relative">+5k</div>
@@ -116,32 +116,32 @@ export const Hero = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-4 sm:pt-6 reveal delay-300">
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10">
-              <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110">
+              <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110 shrink-0">
                 <MapPin weight="fill" className="text-2xl" />
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1.5">Abrangência</span>
-                <span className="text-p3 sm:text-p2 font-bold text-white leading-none whitespace-nowrap">Fortaleza e Região</span>
+                <span className="text-p3 sm:text-p2 font-bold text-white leading-tight">Fortaleza e Região Metropolitana</span>
               </div>
             </div>
 
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10">
-              <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110">
+              <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110 shrink-0">
                 <Clock weight="fill" className="text-2xl" />
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1.5">Disponibilidade</span>
-                <span className="text-p3 sm:text-p2 font-bold text-white leading-none whitespace-nowrap">Plantão 24 Horas</span>
+                <span className="text-p3 sm:text-p2 font-bold text-white leading-tight">Plantão 24 Horas</span>
               </div>
             </div>
 
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10 sm:hidden lg:flex">
-              <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110">
+              <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110 shrink-0">
                 <ShieldCheck weight="fill" className="text-2xl" />
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1.5">Orçamento</span>
-                <span className="text-p3 sm:text-p2 font-bold text-white leading-none whitespace-nowrap">Sem Custos</span>
+                <span className="text-p3 sm:text-p2 font-bold text-white leading-tight">Sem Custos</span>
               </div>
             </div>
           </div>

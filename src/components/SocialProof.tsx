@@ -69,7 +69,7 @@ export const Testimonials = () => {
                     <div className="w-14 h-14 rounded-xl bg-white shadow-md flex items-center justify-center p-2 shrink-0">
                       <img 
                         src={d.logo} 
-                        alt={d.n} 
+                        alt={`Depoimento de ${d.n} - ${d.role}`} 
                         className="w-full h-full object-contain"
                         referrerPolicy="no-referrer"
                       />
@@ -97,7 +97,7 @@ export const ClientLogos = () => {
           <div key={i} className="flex items-center justify-center min-w-[180px] md:min-w-[240px]">
             <img 
               src={logo} 
-              alt={`Cliente ${i}`} 
+              alt="Logo de empresa parceira de refrigeração comercial" 
               className="h-14 md:h-20 w-auto grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 object-contain drop-shadow-sm"
               referrerPolicy="no-referrer"
             />

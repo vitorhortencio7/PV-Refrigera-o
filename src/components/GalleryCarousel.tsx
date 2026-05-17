@@ -69,7 +69,7 @@ export const GalleryCarousel = () => {
                     >
                       <img 
                         src={activeProject.beforeImg} 
-                        alt="Antes" 
+                        alt={`Antes da manutenção: ${activeProject.title} em Fortaleza`} 
                         className="w-full h-full object-cover grayscale-[0.3]" 
                         referrerPolicy="no-referrer"
                         loading="lazy"
@@ -88,7 +88,7 @@ export const GalleryCarousel = () => {
                     >
                       <img 
                         src={activeProject.afterImg} 
-                        alt="Depois" 
+                        alt={`Depois da manutenção especializada: ${activeProject.title}`} 
                         className="w-full h-full object-cover" 
                         referrerPolicy="no-referrer"
                         loading="lazy"
