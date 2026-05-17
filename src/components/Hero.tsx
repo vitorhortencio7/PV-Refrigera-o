@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Snowflake, WhatsappLogo, ArrowDown, Star, MapPin, Clock, ShieldCheck } from '@phosphor-icons/react';
-import { DYNAMIC_WORDS, WA_LINK } from '../constants';
+import { DYNAMIC_WORDS, WA_LINK, CLIENT_LOGOS } from '../constants';
 import { WorkCarousel } from './WorkCarousel';
 
 export const Hero = () => {
@@ -84,10 +84,12 @@ export const Hero = () => {
 
             <div className="flex flex-col sm:flex-row items-center gap-5 pt-2 opacity-90">
               <div className="flex -space-x-3 shrink-0">
-                <img src="https://i.pravatar.cc/100?img=11" alt="Cliente" className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary inline-block object-cover shadow-lg" />
-                <img src="https://i.pravatar.cc/100?img=33" alt="Cliente" className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary inline-block object-cover shadow-lg" />
-                <img src="https://i.pravatar.cc/100?img=12" alt="Cliente" className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary inline-block object-cover shadow-lg" />
-                <div className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary bg-brand-primary/20 backdrop-blur-sm flex items-center justify-center text-white text-xs font-bold z-10 shadow-lg">+5k</div>
+                {CLIENT_LOGOS.slice(0, 3).map((logo, index) => (
+                  <div key={index} className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary bg-white flex items-center justify-center p-1 inline-block shadow-lg z-0 relative">
+                    <img src={logo} alt="Cliente Logo" className="w-full h-full object-contain rounded-full" />
+                  </div>
+                ))}
+                <div className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary bg-brand-primary/20 backdrop-blur-sm flex items-center justify-center text-white text-xs font-bold z-10 shadow-lg relative">+5k</div>
               </div>
               <div className="flex flex-col items-center sm:items-start text-sm">
                 <div className="flex text-[#EF9F27] ml-0.5 mb-1">

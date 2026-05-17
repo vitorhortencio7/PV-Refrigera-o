@@ -4,7 +4,7 @@ import { ThermometerCold, Storefront, Snowflake, Wrench, ShieldCheck, Lightning 
 export const WA_NUMBER = '5585994159026';
 export const WA_TEXT = encodeURIComponent('Olá! Gostaria de solicitar um orçamento.');
 export const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_TEXT}`;
-export const INSTA_LINK = 'https://instagram.com/pvrefrigeracaofc';
+export const INSTA_LINK = 'https://www.instagram.com/pvrefrigeracaofc';
 export const PHONE_LINK = 'tel:+5585994159026';
 
 // Data Arrays
@@ -50,27 +50,6 @@ export const PROJECTS = [
   }
 ];
 
-export const TESTIMONIALS = [
-  { 
-    n: 'Juliana Bôto', 
-    text: 'Estamos trabalhando com o Paulo há mais ou menos 5 anos, ele sempre nos atendeu muito bem, até em momentos que eu estava desesperada para achar alguém no final de semana.', 
-    l: 'J',
-    role: 'Gerente de Suprimentos da MenuBrands'
-  },
-  { 
-    n: 'Açougue Central', 
-    text: 'Atendimento muito rápido. Minha câmara de carnes parou na madrugada e o Paulo Victor resolveu em poucas horas.', 
-    l: 'A',
-    role: 'Cliente Verificado'
-  },
-  { 
-    n: 'Padaria Modelo', 
-    text: 'Instalou nossa bancada de frios inteira com perfeição. Cobrou um preço justo e cumpriu o prazo dado.', 
-    l: 'P',
-    role: 'Cliente Verificado'
-  }
-];
-
 export const CLIENT_LOGOS = [
   "https://i.ibb.co/3mrKY70y/1.png",
   "https://i.ibb.co/m5M4spTW/2.png",
@@ -81,6 +60,30 @@ export const CLIENT_LOGOS = [
   "https://i.ibb.co/DfSD9gNT/8.png",
   "https://i.ibb.co/7JXcwvdh/9.png",
   "https://i.ibb.co/5W8KhZSp/Parrilheiro.jpg"
+];
+
+export const TESTIMONIALS = [
+  { 
+    n: 'Juliana Boto', 
+    text: 'Quem tem restaurante em Fortaleza sabe o desespero quando um freezer ou câmara fria para no fim de semana. O Paulo Victor resolveu super rápido, preço justo e salvou nosso estoque. Hoje cuida de toda a manutenção preventiva das nossas lojas.', 
+    l: 'J',
+    logo: CLIENT_LOGOS[0],
+    role: 'Gerente de Suprimentos da MenuBrands'
+  },
+  {
+    n: 'Zuellington Lemos',
+    text: 'Contratamos o Paulo Victor para a manutenção urgente dos nossos balcões de pista fria e geladeiras industriais na Aldeota. Serviço limpo, rápido e feito sem atrapalhar a cozinha do restaurante. Indico de olhos fechados!',
+    l: 'Z',
+    logo: 'https://i.ibb.co/YFvRHmVT/4.png',
+    role: 'Sócio-Diretor do Illa Mare'
+  },
+  { 
+    n: 'Noélia Fontenelle', 
+    text: 'Trabalhamos com o Paulo há mais de 4 anos na assistência técnica da nossa refrigeração profissional. Sempre pontual, transparente com as peças e emite nota fiscal. É o melhor técnico de geladeiras comerciais de Fortaleza.', 
+    l: 'N',
+    logo: 'https://i.ibb.co/Mx79sSt4/5.png',
+    role: 'Fundadora da Noélia Doces e Salgados'
+  }
 ];
 
 export const HERO_IMAGES = [

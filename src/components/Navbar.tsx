@@ -48,14 +48,14 @@ export const Navbar = () => {
   return (
     <>
       <header className={`fixed top-0 left-0 w-full z-[60] transition-all duration-300 border-b ${scrolled ? 'bg-brand-card/95 backdrop-blur-md shadow-[0_1px_0_#CDD4E0] border-brand-border h-20' : 'bg-transparent border-transparent h-24'}`}>
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 flex items-center justify-between h-full">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-10 flex items-center justify-between h-full">
           <div className="flex items-center gap-3 relative z-[70]">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-primary rounded-full border border-brand-border/20 flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
               <img src="https://i.ibb.co/kswhJNTT/New-Project.jpg" alt="Paulo Victor Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
-              <span className={`text-[1.25rem] font-bold tracking-tight uppercase heading-font leading-none mb-1 transition-colors ${ (scrolled || menuOpen) ? 'text-brand-text' : 'text-white'}`}>Paulo Victor</span>
-              <span className={`text-p4 transition-colors ${ (scrolled || menuOpen) ? 'text-brand-primary' : 'text-brand-primary-hover'}`}>Refrigeração Profissional</span>
+              <span className={`text-[1.25rem] font-bold tracking-tight uppercase heading-font leading-none mb-0.5 transition-colors ${ (scrolled || menuOpen) ? 'text-brand-text' : 'text-white'}`}>Paulo Victor</span>
+              <span className={`text-[1rem] font-medium transition-colors ${ (scrolled || menuOpen) ? 'text-brand-primary' : 'text-brand-primary-hover'}`}>Refrigeração Profissional</span>
             </div>
           </div>
 
@@ -121,11 +121,11 @@ export const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed inset-0 bg-brand-card z-50 flex flex-col pt-32 px-8 pb-10 md:hidden"
+            className="fixed inset-x-0 top-0 bg-brand-card shadow-2xl z-50 flex flex-col pt-24 px-5 pb-8 md:hidden border-b border-brand-border/10 rounded-b-3xl"
           >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/5 rounded-full -mr-32 -mt-32 blur-3xl opacity-50"></div>
             
-            <nav className="flex flex-col gap-6 text-h3 flex-1 overflow-y-auto no-scrollbar relative z-10">
+            <nav className="flex flex-col gap-2 text-[1.25rem] flex-1 overflow-y-auto no-scrollbar relative z-10 w-full font-bold">
               {NAV_LINKS.map((link, i) => (
                 <motion.a
                   key={link.href}
@@ -134,14 +134,14 @@ export const Navbar = () => {
                   transition={{ delay: 0.1 + i * 0.05 }}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-brand-text hover:text-brand-primary w-full pb-4 border-b border-brand-border/50 flex items-center justify-between group"
+                  className="text-brand-text hover:text-brand-primary w-full py-4 border-b border-brand-border/30 flex items-center justify-between group heading-font"
                 >
                   {link.label}
                   <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.3 + i * 0.05 }}
-                    className="w-8 h-8 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-colors"
+                    className="w-10 h-10 rounded-xl bg-brand-primary/5 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-colors"
                   >
                     <List weight="bold" className="text-xs rotate-[-90deg]" />
                   </motion.div>
@@ -153,10 +153,10 @@ export const Navbar = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="mt-auto relative z-10"
+              className="mt-6 relative z-10"
             >
-              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="w-full bg-brand-whatsapp text-white py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-brand-whatsapp/20 active:scale-95 transition-all">
-                <WhatsappLogo weight="fill" className="text-[28px]" />
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="w-full bg-brand-whatsapp text-white py-4 rounded-xl font-bold text-[16px] flex items-center justify-center gap-3 shadow-xl shadow-brand-whatsapp/10 active:scale-95 transition-all">
+                <WhatsappLogo weight="fill" className="text-[20px]" />
                 <span>Conversar no WhatsApp</span>
               </a>
             </motion.div>

@@ -1,6 +1,10 @@
 {
-  "name": "Paulo Victor Refrigeração",
-  "description": "Landing page profissional mobile-first para empresa de refrigeração especializada em câmaras frias e manutenção comercial.",
-  "requestFramePermissions": [],
-  "majorCapabilities": []
+  "name": "PV Refrigeração | Manutenção de Refrigeração Comercial e Industrial",
+  "description": "A empresa de refrigeração especializada em manutenção, conserto e instalação de sistemas refrigerados comerciais e industriais em Fortaleza. Serviços em câmaras frias, balcões e motores.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

@@ -23,7 +23,7 @@ export const Services = () => {
           <div className="w-12 h-12 bg-brand-primary-subtle rounded-2xl flex items-center justify-center text-brand-primary mb-4 reveal">
             <Wrench weight="fill" className="text-2xl" />
           </div>
-          <h2 className="text-h2 text-brand-text reveal delay-75">Serviços <span className="text-brand-primary">Técnicos</span></h2>
+          <h2 className="text-h2 text-brand-text reveal delay-75">Serviços Técnicos em <span className="text-brand-primary">Refrigeração Comercial</span></h2>
           <p className="text-p1 text-brand-text-secondary mt-4 max-w-xl mx-auto leading-relaxed reveal delay-150">Soluções completas e especializadas para a refrigeração do seu negócio.</p>
         </div>
 
