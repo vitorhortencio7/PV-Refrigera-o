@@ -47,15 +47,15 @@ export const Navbar = () => {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-[60] transition-all duration-300 border-b ${scrolled ? 'bg-brand-card/95 backdrop-blur-md shadow-[0_1px_0_#CDD4E0] border-brand-border h-20' : 'bg-transparent border-transparent h-24'}`}>
+      <header className={`fixed top-0 left-0 w-full z-[60] transition-all duration-300 border-b ${scrolled ? 'bg-brand-card/95 backdrop-blur-md shadow-[0_1px_0_#CDD4E0] border-brand-border h-16 md:h-20' : 'bg-transparent border-transparent h-20 md:h-24'}`}>
         <div className="max-w-[1440px] mx-auto px-5 sm:px-10 flex items-center justify-between h-full">
           <div className="flex items-center gap-3 relative z-[70]">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-primary rounded-full border border-brand-border/20 flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
+            <div className="w-9 h-9 sm:w-11 sm:h-11 bg-brand-primary rounded-full border border-brand-border/20 flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
               <img src="https://i.ibb.co/kswhJNTT/New-Project.jpg" alt="Paulo Victor Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
             <div className="flex flex-col">
-              <span className={`text-[1.25rem] font-bold tracking-tight uppercase heading-font leading-none mb-0.5 transition-colors ${ (scrolled || menuOpen) ? 'text-brand-text' : 'text-white'}`}>Paulo Victor</span>
-              <span className={`text-[1rem] font-medium transition-colors ${ (scrolled || menuOpen) ? 'text-brand-primary' : 'text-brand-primary-hover'}`}>Refrigeração Profissional</span>
+              <span className={`text-[1.1rem] sm:text-[1.25rem] font-bold tracking-tight uppercase heading-font leading-none mb-0.5 transition-colors ${ (scrolled || menuOpen) ? 'text-brand-text' : 'text-white'}`}>Paulo Victor</span>
+              <span className={`text-[0.85rem] sm:text-[1rem] font-medium transition-colors ${ (scrolled || menuOpen) ? 'text-brand-primary' : 'text-brand-primary-hover'}`}>Refrigeração Profissional</span>
             </div>
           </div>
 

@@ -46,25 +46,25 @@ export const Hero = () => {
         <Snowflake weight="fill" className="w-[32rem] h-[32rem] animate-[spin_20s_linear_infinite]" />
       </div>
       
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-12 pt-32 pb-16 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
-        <div className="md:col-span-7 flex flex-col justify-center space-y-8">
-          <div className="space-y-6">
-            <div className="flex items-center gap-3 text-brand-primary-subtle font-bold tracking-widest text-p4 reveal">
-              <div className="w-8 h-[2px] bg-brand-primary-subtle"></div>
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-12 pt-28 pb-12 md:pt-32 md:pb-24 xl:pt-36 lg:pb-32 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center relative z-10">
+        <div className="lg:col-span-7 flex flex-col justify-center space-y-6 md:space-y-8">
+          <div className="space-y-4 md:space-y-6">
+            <div className="flex items-center gap-3 text-brand-primary-subtle font-bold tracking-widest text-[10px] md:text-p4 reveal">
+              <div className="w-6 h-[2px] md:w-8 bg-brand-primary-subtle"></div>
               Atendimento 24 Horas
             </div>
             
             <h1 className="text-h1 text-white reveal delay-75">
-              <span className="block mb-2">Especialistas em</span>
-              <span className="block h-[2.5rem] md:h-[1.3em] overflow-hidden relative">
+              <span className="block mb-1 md:mb-2">Especialistas em</span>
+              <span className="block h-[2.2rem] md:h-[1.2em] overflow-hidden relative">
                 <AnimatePresence mode="wait">
                   <motion.span 
                     key={wordIndex} 
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="text-brand-primary-hover block text-balance max-w-sm sm:max-w-md md:max-w-none"
+                    exit={{ opacity: 0, y: -15 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    className="text-brand-primary-hover block text-balance max-w-sm sm:max-w-md lg:max-w-none"
                   >
                     {DYNAMIC_WORDS[wordIndex]}
                   </motion.span>
@@ -72,82 +72,82 @@ export const Hero = () => {
               </span>
             </h1>
             
-            <p className="text-p1 text-white/90 max-w-lg leading-relaxed reveal delay-150">
+            <p className="text-base md:text-p1 text-white/90 max-w-lg leading-relaxed reveal delay-150">
               Mais de 8 anos salvando operações comerciais pela madrugada. Manutenção ágil e preventiva nas suas câmaras, balcões e pistas frias, cobrindo toda Região Metropolitana de Fortaleza.
             </p>
           </div>
 
-          <div className="space-y-8 reveal delay-200">
+          <div className="space-y-6 md:space-y-8 reveal delay-200">
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="bg-brand-whatsapp text-white px-8 py-4.5 rounded-[1.25rem] font-bold text-p2 flex items-center justify-center gap-3 shadow-lg shadow-brand-whatsapp/20 hover:bg-brand-whatsapp-hover hover:-translate-y-1 active:scale-[0.98] transition-all">
-                <WhatsappLogo weight="fill" className="text-[28px] animate-wiggle" />
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="bg-brand-whatsapp text-white px-6 md:px-8 py-3 rounded-[1.25rem] md:py-4.5 font-bold text-p2 flex items-center justify-center gap-3 shadow-lg shadow-brand-whatsapp/20 hover:bg-brand-whatsapp-hover hover:-translate-y-1 active:scale-[0.98] transition-all">
+                <WhatsappLogo weight="fill" className="text-[24px] md:text-[28px] animate-wiggle" />
                 <span>Orçamento Grátis</span>
               </a>
               <a 
                 href="#servicos" 
                 onClick={(e) => scrollToSection(e, '#servicos')}
-                className="text-white/50 hover:text-white/80 px-4 py-4 font-bold uppercase tracking-[0.15em] text-p4 transition-all flex justify-center items-center group cursor-pointer"
+                className="text-white/50 hover:text-white/80 px-4 py-3 md:py-4 font-bold uppercase tracking-[0.15em] text-p4 transition-all flex justify-center items-center group cursor-pointer"
               >
                 Nossos Serviços <ArrowDown weight="bold" className="ml-2 group-hover:translate-y-1 transition-transform opacity-30 group-hover:opacity-100" />
               </a>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-5 pt-2 opacity-90">
+            <div className="flex flex-col sm:flex-row items-center gap-5 pt-0 md:pt-2 opacity-90">
               <div className="flex -space-x-3 shrink-0">
                 {CLIENT_LOGOS.slice(0, 3).map((logo, index) => (
-                  <div key={index} className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary bg-white flex items-center justify-center p-1 inline-block shadow-lg z-0 relative">
+                  <div key={index} className="w-[38px] h-[38px] md:w-[42px] md:h-[42px] rounded-full border-2 border-brand-primary bg-white flex items-center justify-center p-1 inline-block shadow-lg z-0 relative">
                     <img src={logo} alt="Referência de serviço de refrigeração em Fortaleza" className="w-full h-full object-contain rounded-full" referrerPolicy="no-referrer" />
                   </div>
                 ))}
-                <div className="w-[42px] h-[42px] rounded-full border-2 border-brand-primary bg-brand-primary/20 backdrop-blur-sm flex items-center justify-center text-white text-xs font-bold z-10 shadow-lg relative">+5k</div>
+                <div className="w-[38px] h-[38px] md:w-[42px] md:h-[42px] rounded-full border-2 border-brand-primary bg-brand-primary/20 backdrop-blur-sm flex items-center justify-center text-white text-[10px] md:text-xs font-bold z-10 shadow-lg relative">+5k</div>
               </div>
               <div className="flex flex-col items-center sm:items-start text-sm">
-                <div className="flex text-[#EF9F27] ml-0.5 mb-1">
+                <div className="flex text-[#EF9F27] ml-0.5 mb-1 scale-90 md:scale-100 origin-left">
                   <Star weight="fill" size={16} />
                   <Star weight="fill" size={16} />
                   <Star weight="fill" size={16} />
                   <Star weight="fill" size={16} />
                   <Star weight="fill" size={16} />
                 </div>
-                <span className="text-white/80 font-bold text-p4 leading-none">Clientes satisfeitos</span>
+                <span className="text-white/80 font-bold text-[10px] md:text-p4 leading-none">Clientes satisfeitos</span>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-4 sm:pt-6 reveal delay-300">
-            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10">
-              <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110 shrink-0">
-                <MapPin weight="fill" className="text-2xl" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-2 md:pt-6 reveal delay-300">
+            <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110 shrink-0">
+                <MapPin weight="fill" className="text-xl md:text-2xl" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1.5">Abrangência</span>
-                <span className="text-p3 sm:text-p2 font-bold text-white leading-tight">Fortaleza e Região Metropolitana</span>
+                <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1 md:mb-1.5">Abrangência</span>
+                <span className="text-p3 md:text-p2 font-bold text-white leading-tight">Fortaleza e Região</span>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10">
-              <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110 shrink-0">
-                <Clock weight="fill" className="text-2xl" />
+            <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110 shrink-0">
+                <Clock weight="fill" className="text-xl md:text-2xl" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1.5">Disponibilidade</span>
-                <span className="text-p3 sm:text-p2 font-bold text-white leading-tight">Plantão 24 Horas</span>
+                <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1 md:mb-1.5">Disponibilidade</span>
+                <span className="text-p3 md:text-p2 font-bold text-white leading-tight">Plantão 24 Horas</span>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10 sm:hidden lg:flex">
-              <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110 shrink-0">
-                <ShieldCheck weight="fill" className="text-2xl" />
+            <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-2xl bg-white/5 border border-white/10 group transition-all hover:bg-white/10 sm:hidden lg:flex">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary-hover transition-all duration-300 group-hover:scale-110 shrink-0">
+                <ShieldCheck weight="fill" className="text-xl md:text-2xl" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1.5">Orçamento</span>
-                <span className="text-p3 sm:text-p2 font-bold text-white leading-tight">Sem Custos</span>
+                <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mb-1 md:mb-1.5">Orçamento</span>
+                <span className="text-p3 md:text-p2 font-bold text-white leading-tight">Sem Custos</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="md:col-span-5 flex flex-col justify-center reveal [transition-delay:200ms] h-full">
+        <div className="lg:col-span-5 flex flex-col justify-center reveal [transition-delay:200ms] h-full lg:max-h-[500px]">
           <WorkCarousel />
         </div>
       </div>

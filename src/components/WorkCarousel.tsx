@@ -13,7 +13,7 @@ export const WorkCarousel = () => {
   }, []);
 
   return (
-    <div className="w-full h-[400px] sm:h-full sm:min-h-[450px] relative rounded-[2rem] overflow-hidden border border-brand-border shadow-2xl group bg-brand-bg">
+    <div className="w-full h-[350px] sm:h-[400px] lg:h-full lg:min-h-[480px] xl:min-h-[520px] relative rounded-[2rem] overflow-hidden border border-brand-border shadow-2xl group bg-brand-bg">
       <AnimatePresence mode="wait">
         <motion.img 
           key={current}
