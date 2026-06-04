@@ -50,9 +50,20 @@ export const Footer = () => (
     </div>
     <div className="max-w-[1440px] mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
       <span className="text-center md:text-left text-brand-text-aux text-p4 opacity-80">&copy; {new Date().getFullYear()} Paulo Victor Refrigeração Profissional. Todos os direitos reservados.</span>
-      <span className="text-p4 text-brand-text-aux/40 text-center md:text-right">
-        Desenvolvido por VH Design • Fortaleza - CE
-      </span>
+      <a 
+        href="https://vitorhortencio.com.br" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="flex items-center gap-2.5 opacity-40 hover:opacity-100 transition-opacity text-p4 text-brand-text-aux shrink-0 group"
+      >
+        <span>Desenvolvido por VH Design</span>
+        <img 
+          src="https://i.ibb.co/B5QnqfTc/Logo-VH.png" 
+          alt="Logo VH Design" 
+          className="h-5 w-auto object-contain group-hover:scale-105 transition-transform" 
+          referrerPolicy="no-referrer"
+        />
+      </a>
     </div>
   </footer>
 );
